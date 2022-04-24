@@ -23,9 +23,11 @@ Route::get('/weblog/{id}/{weblogSlug}','\App\Http\Controllers\WeblogController@d
 Route::post('/weblog','\App\Http\Controllers\WeblogController@send')->name('weblog.send');
 Route::get('/weblog/delete/{id}','\App\Http\Controllers\WeblogController@delete');
 Route::get('/suggestion','\App\Http\Controllers\SuggestionController@index');
+Route::get('/',function (){
+    return view('main');
+});
 
 
-Route::get('/','\App\Http\Controllers\PricesController@index');
 
 
 

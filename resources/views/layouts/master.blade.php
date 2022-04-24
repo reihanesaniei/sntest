@@ -21,10 +21,12 @@
     <title>Saniei</title>
 </head>
 <body>
+    <div id="body">
+        @include('partial.header')
+        @yield('content')
+        @include('partial.footer')
+    </div>
 
-    @include('partial.header')
-    @yield('content')
-    @include('partial.footer')
 </body>
 
 

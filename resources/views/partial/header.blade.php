@@ -5,7 +5,8 @@
         <nav id="navbar" class="navbar ">
             <ul>
 
-                <li><a class="nav-link scrollto active" href="/">لیست قیمتها</a></li>
+                <li><a class="nav-link scrollto" href="/">صفحه اصلی</a></li>
+                <li><a class="nav-link scrollto" href="/api/pricelist">لیست قیمتها</a></li>
 
                 {{--<li><a class="nav-link scrollto" href="/contactus">تماس با ما</a></li>
                 <li><a class="nav-link scrollto" href="/weblog">وبلاگ</a></li>

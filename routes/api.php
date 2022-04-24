@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('pricelist',\App\Http\Controllers\API\PricelistController::class);
+Route::get('/api/pricelist','\App\Http\Controllers\API\PricelistController@index')->name('pricelist.index');
+
